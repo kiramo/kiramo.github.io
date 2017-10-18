@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i|Spectral:400,400i');
+
+header {
+  background-color: #FCEE21;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  text-decoration: none;
+}
+
+h1 {
+  color: #333333;
+  font-size: 40px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  }
+
+nav {
+  color: #333333;
+  background-color: #FCEE21;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+    }
+a:hover {
+        color:white;
+    }
+h2 {
+  color: #333333;
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+h3 {
+  color: #333333;
+  font-style: italic;
+  font-size: 22px;
+  font-family: "Spectral", sans-serif;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+a {
+  color: #333333;
+  text-decoration: none;
+}
+
+p {
+  color: #333333;
+  font-size: 20px;
+  font-family: "Spectral", sans-serif;
+  }
+
+footer {
+  background-color: #FCEE21;
+  font-style: italic;
+  text-align: left}>
+}
