@@ -11,6 +11,7 @@ Base styles:
 /* Fix for responsive images */
 img {
 	max-width: 100%;
+  max-resolution: 100%;
 }
 
 /* ----------------------------------------
@@ -20,7 +21,7 @@ body {
 	font-family: "PT+Sans", sans-serif;
 	font-weight: 600;
 	text-align: center;
-	color: #44545e;
+	color: #102127;
 	width: 70%;
 	margin: 0 auto;
 }
@@ -32,23 +33,26 @@ p {
 	text-align: left;
 	margin-bottom:20px;
 	text-align: center;
+  color: #102127
 }
 
 a {
-	font-family: "PT+Sans", sans-serif;
+  font-family: "PT+Sans", sans-serif;
 	font-weight: 600;
 	font-size: 13px;
 	text-decoration: none;
 	text-transform: uppercase;
-	color: #44545e;
+	color: #102127;
 }
+
 /* ----------------------------------------
 Lists
 ------------------------------------------- */
 }
 
 nav header {
-	text-align: center;
+color: #102127;
+  text-align: center;
 	text-transform: uppercase;
 }
 
@@ -62,7 +66,7 @@ Layout
 }
 
 #about {
-	background: #CDF3F6;
+	background: #fcc931;
 	padding-top: 10px;
 	padding-bottom: 60px;
 	padding-right: 60px;
@@ -70,7 +74,7 @@ Layout
 	}
 
 section {
-	padding-top: 40px;
+	padding-top: -20px;
 	padding-bottom: 40px;
 	}
 /* ----------------------------------------
@@ -83,7 +87,7 @@ nav a {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	font-size: 16px;
-	color: #7B98AA;
+	color: #102127;
 	text-transform: uppercase;
 	margin-left: 40px;
 	margin-right: 40px;
@@ -92,7 +96,7 @@ nav a {
 }
 
 body {
-	color: #44544e;
+	color: #102127;
 	font-family: 'PT+Sans', sans-serif;
 	margin: 0 auto;
 	text-align: center;
@@ -103,15 +107,16 @@ body {
 header {
 	font-weight: 600;
 	padding: 110px;
-	background-image: url('../home_header_bg.jpg');
+	background-image: url('../img/Sunflower.jpg');
 	img max-width: 100%;
+  img max-height: 100%;
 	background-size: cover;
 	text-align: center;
 	background-position: center;
 	margin-left: -100px;
 	margin-right: -100px;
 	margin-top: none;
-	margin-bottom: none;
+	margin-bottom: 40px;
 	letter-spacing: 15px;
 	text-transform: uppercase;
 	color: #ffffff
@@ -149,26 +154,28 @@ h3 {
 	font-family: "PT+Sans", sans-serif;
 	font-weight: 600;
 	font-size: 18px;
+  color: #102127
 	text-transform: uppercase;
 }
 /* ----------------------------------------
 Buttons
 ------------------------------------------- */
 .readmore {
-  border: 3px solid #44544e;
+  border: 3px solid #102127;
 	padding-right: 20px;
 	padding-left: 20px;
 	padding-top: 2.5px;
 	padding-bottom: 2.5px;
-	}
-
+  background-color: #FBBE09;
+  color: #102127;
+  }
 
 /* ----------------------------------------
 Footer
 ------------------------------------------- */
 footer {
     text-align: center;
-    background: #CDF3F6;
+    background: #fcc931;
     padding-top: 20px;
     padding-bottom: 20px;
     margin-right: -20px;
@@ -178,13 +185,16 @@ footer {
 .fa {
 padding: 20px;
 padding-bottom: -40px;
+color: #102127
 }
 
 .email {
 	margin-right: 30px;
 	font-size: 12px;
+  color: #102127;
 	font-weight: 700;
-	border-style: none;
+	border-color: #102127;
+  border: 3px solid #102127;
 	text-align: center;
 	font-family: "PT+Sans", sans-serif;
 	font-weight: 400;
@@ -194,6 +204,6 @@ padding-bottom: -40px;
 }
 
 hr {
-    color: #44544e;
+    color: #102127;
 		border-style: solid;
 }
