@@ -165,7 +165,7 @@ h3 {
   	img max-height: 150px;
 	border-color: #102127;
   	border: 3px solid #102127;
-}	
+}
 /* ----------------------------------------
 Buttons
 ------------------------------------------- */
@@ -215,4 +215,10 @@ color: #102127
 hr {
     color: #102127;
 		border-style: solid;
+}
+
+@media screen and (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
