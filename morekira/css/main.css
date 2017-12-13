@@ -1,24 +1,33 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import url ('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css');
+@import url('http://kenwheeler.github.io/slick/slick/slick.css');
+@import url('http://kenwheeler.github.io/slick/slick/slick-theme.css');
+
+
 /* --------------------------------------------------------------------------
 Base styles:
 ----------------------------------------------------------------------------- */
-/* Fix to include padding and border in the total width for each element */
 * {
   box-sizing: border-box;
 }
 
-/* Fix for responsive images */
 img {
 	max-width: 100%;
   max-resolution: 100%;
 }
 
+p img {
+  max-width: 400px;
+  max-height: 400px
+  overflow:hidden;
+  }
+
 /* ----------------------------------------
 Typography
 ------------------------------------------- */
 body {
-	font-family: "PT+Sans", sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-weight: 600;
 	text-align: center;
 	color: #102127;
@@ -32,8 +41,7 @@ p {
 	line-height: 130%;
 	text-align: left;
 	margin-bottom:20px;
-	text-align: center;
-  color: #102127
+	color: #102127
 }
 
 a {
@@ -48,51 +56,71 @@ a {
 /* ----------------------------------------
 Lists
 ------------------------------------------- */
+nav {
+  border-bottom: 3px solid #7E667F;
+  width: 100%;
+  overflow: hidden;
+	background-color: #fcc931;
+	position: fixed;
+	top: 0;
+  left: 0;
+  z-index:1;
 }
 
 nav header {
-color: #102127;
+  border: 3px solid #102127;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 2.5px;
+  background-color: #FBBE09;
+  color: #102127;
   text-align: center;
 	text-transform: uppercase;
+  margin-left: -200px;
 }
-
 /* ----------------------------------------
 Layout
 ------------------------------------------- */
 .grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-column-gap: 25px;
-}
+	grid-column-gap: 15px;
+  }
 
 #about {
-	background: #fcc931;
-	padding-top: 10px;
+	background-color: #fcc931;
+  background width: 100%;
+	padding-top: 50px;
 	padding-bottom: 60px;
-	padding-right: 60px;
-	padding-left: 60px;
+  margin-left: -200px;
+  margin-right: -150px;
 	}
 
 section {
 	padding-top: -20px;
 	padding-bottom: 40px;
-	}
+  padding-right: 100px;
+	padding-left: 100px;
+  margin-left: -200px;
+  margin-right: -150px;
+  }
 /* ----------------------------------------
 Header
 ------------------------------------------- */
 
 nav a {
-	text-align: center;
 	font-family: 'PT+Sans', sans-serif;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	font-size: 16px;
 	color: #102127;
 	text-transform: uppercase;
-	margin-left: 40px;
-	margin-right: 40px;
 	text-decoration: none;
 	font-weight: 600;
+	display: inline-block;
+	letter-spacing: 1px;
+	-webkit-transition: color .5s;
+	transition: color .5s;
 }
 
 body {
@@ -106,34 +134,40 @@ body {
 
 header {
 	font-weight: 600;
-	padding: 110px;
+  padding: 110px;
 	background-image: url('../img/Sunflower.jpg');
 	img max-width: 100%;
   img max-height: 100%;
 	background-size: cover;
 	text-align: center;
 	background-position: center;
-	margin-left: -100px;
-	margin-right: -100px;
-	margin-top: none;
+	margin-left: -100%;
+	margin-right: -100%;
+	margin-top: -8%;
 	margin-bottom: 40px;
 	letter-spacing: 15px;
 	text-transform: uppercase;
-	color: #ffffff
-}
+	}
 
 h1 {
   font-size: 37px;
 	text-align:center;
+  margin-left: -100%;
+  margin-right: -100%;
+  padding-top: 3px;
+	padding-bottom: 3px;
   text-decoration: none;
   color: white;
 	text-transform: uppercase;
+  line-height: 1em
 }
 
 header h2 {
   font-size: 23px;
 	font-weight: lighter;
 	text-align:center;
+  margin-left: -100%;
+  margin-right: -100%;
 	letter-spacing: 1px;
 	text-decoration: none;
   color: white;
@@ -148,6 +182,7 @@ h2 {
 	text-transform: uppercase;
 	padding-top: 30px;
 	padding-bottom: 5px;
+  line-height: 1em
 }
 
 h3 {
@@ -159,13 +194,16 @@ h3 {
 }
 
 .KirawithSunflowers {
-	padding-top: 40px;
-	padding-bottom: -20px;
-	img max-width: 150px;
-  	img max-height: 150px;
-	border-color: #102127;
-  	border: 3px solid #102127;
+max-width: 500px;
+border: double #102127;
+padding-top: 5px;
+padding-bottom: 1px;
+padding-left: 6px;
+padding-right: 6px;
+margin: 0 auto;
 }
+
+
 /* ----------------------------------------
 Buttons
 ------------------------------------------- */
@@ -175,20 +213,94 @@ Buttons
 	padding-left: 20px;
 	padding-top: 2.5px;
 	padding-bottom: 2.5px;
-  background-color: #FBBE09;
+  background: #FBBE09;
   color: #102127;
+  transition: all .2s ease-in-out;
+}
+
+.readmore:hover { transform: scale(1.5);
+display:inline-block;
+}
+
+a:hover {
+  color:#7E667F;
+}
+
+nav a:hover {
+    color: #7E667F;
+    background: #fcc931;
+}
+
+.readmore a:hover {
+  color: #102127;
+
+}
+
+.readmore:hover{
+	background: #7E667F;
+}
+input{
+	width:300px;
+	border:none;
+	background-color:#7E667F;
+	padding: 10px;
+	text-transform: uppercase;
+	text-align:center;
+}
+
+#popup {
+  position:fixed;
+  top:10;
+  bottom:10;
+  left:10;
+  right:10;
+  padding: 10px;
+  border: 3px solid #102127;
+  display: none;
+  background: #7E667F;
   }
 
+  <style>
+
+.back-to-top {
+
+margin: 0;
+
+position: fixed;
+
+bottom: 0;
+
+right: 0;
+
+width: 70px;
+
+height: 70px;
+
+z-index: 100;
+
+display: none;
+}
+
+
+</style>
+
+.one-time {
+
+
+}
+.slick{
+
+}
 /* ----------------------------------------
 Footer
 ------------------------------------------- */
 footer {
     text-align: center;
-    background: #fcc931;
-    padding-top: 20px;
+    background: #FBBE09;
+    padding-top: 0px;
     padding-bottom: 20px;
-    margin-right: -20px;
-    margin-left: -20px;
+    margin-left: -100%;
+    margin-right: -100%;
 }
 
 .fa {
@@ -196,6 +308,11 @@ padding: 20px;
 padding-bottom: -40px;
 color: #102127
 }
+
+.fa:hover {
+	color: #7E667F;
+}
+
 
 .email {
 	margin-right: 30px;
@@ -210,15 +327,22 @@ color: #102127
 	text-transform: uppercase;
 	padding-top: 5px;
 	padding-bottom: 5px;
+
 }
 
 hr {
-    color: #102127;
+    color: #7E667F;
 		border-style: solid;
+    margin-left: -100%;
+  	margin-right: -100%;
 }
 
 @media screen and (max-width: 600px) {
   .grid {
     grid-template-columns: 1fr;
   }
-}
+
+@media screen and (max-width: 600px) {
+  .grid {
+    padding-bottom: 5px;
+    }
