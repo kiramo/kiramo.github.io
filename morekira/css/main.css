@@ -204,6 +204,7 @@ Buttons
 .hamburger {
   transform: translateX(0);
   display:none;
+max-height: 200px;
 }
 
 /* ----------------------------------
