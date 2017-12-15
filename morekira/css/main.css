@@ -26,15 +26,6 @@ p img {
 /* ----------------------------------------
 Typography
 ------------------------------------------- */
-body {
-	font-family: "Roboto", sans-serif;
-	font-weight: 600;
-	text-align: center;
-	color: #102127;
-	width: 70%;
-	margin: 0 auto;
-}
-
 p {
 	font-family: "PT+Sans", sans-serif;
 	font-weight: 400;
@@ -76,7 +67,6 @@ nav header {
   color: #102127;
   text-align: center;
 	text-transform: uppercase;
-  margin-left: -200px;
 }
 /* ----------------------------------------
 Layout
@@ -92,8 +82,6 @@ Layout
   background width: 100%;
 	padding-top: 50px;
 	padding-bottom: 60px;
-  margin-left: -200px;
-  margin-right: -150px;
 	}
 
 section {
@@ -101,8 +89,6 @@ section {
 	padding-bottom: 40px;
   padding-right: 100px;
 	padding-left: 100px;
-  margin-left: -200px;
-  margin-right: -150px;
   }
 /* ----------------------------------------
 Header
@@ -128,22 +114,21 @@ body {
 	font-family: 'PT+Sans', sans-serif;
 	margin: 0 auto;
 	text-align: center;
-	padding: 80px;
 	line-height: 21px;
+  font-weight: 600;
 }
 
 header {
 	font-weight: 600;
-  padding: 110px;
-	background-image: url('../img/Sunflower.jpg');
+  background-image: url('../img/Sunflower.jpg');
 	img max-width: 100%;
   img max-height: 100%;
 	background-size: cover;
 	text-align: center;
 	background-position: center;
-	margin-left: -100%;
-	margin-right: -100%;
-	margin-top: -8%;
+	margin-left: auto;
+	margin-right: auto;
+  width: 100%;
 	margin-bottom: 40px;
 	letter-spacing: 15px;
 	text-transform: uppercase;
@@ -152,8 +137,8 @@ header {
 h1 {
   font-size: 37px;
 	text-align:center;
-  margin-left: -100%;
-  margin-right: -100%;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 3px;
 	padding-bottom: 3px;
   text-decoration: none;
@@ -166,8 +151,8 @@ header h2 {
   font-size: 23px;
 	font-weight: lighter;
 	text-align:center;
-  margin-left: -100%;
-  margin-right: -100%;
+  margin-left: auto;
+  margin-right: auto;
 	letter-spacing: 1px;
 	text-decoration: none;
   color: white;
@@ -207,6 +192,41 @@ margin: 0 auto;
 /* ----------------------------------------
 Buttons
 ------------------------------------------- */
+.slick-prev:before {
+  background-color: #102127;
+  box-shadow: 3px 3px 18px 5px #7E667F;
+}
+
+.slick-next:before {
+  background-color: #102127;
+  box-shadow: 3px 3px 18px 5px #7E667F;
+}
+.hamburger {
+  transform: translateX(0);
+  display:none;
+}
+
+/* ----------------------------------
+RESPONSIVE STYLES
+-------------------------------------*/
+@media only screen and (max-width: 700px) {
+  nav a {
+
+  }
+
+  .hamburger {
+
+Display: None;
+
+  }
+
+  /* Styles to apply with JS to slide the menu out or down */
+  .menu-open {
+
+  }
+
+}
+
 .readmore {
   border: 3px solid #102127;
 	padding-right: 20px;
@@ -260,7 +280,6 @@ input{
   background: #7E667F;
   }
 
-  <style>
 
 .back-to-top {
 
@@ -282,15 +301,10 @@ display: none;
 }
 
 
-</style>
-
-.one-time {
 
 
-}
-.slick{
 
-}
+
 /* ----------------------------------------
 Footer
 ------------------------------------------- */
@@ -299,8 +313,8 @@ footer {
     background: #FBBE09;
     padding-top: 0px;
     padding-bottom: 20px;
-    margin-left: -100%;
-    margin-right: -100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .fa {
@@ -333,16 +347,46 @@ color: #102127
 hr {
     color: #7E667F;
 		border-style: solid;
-    margin-left: -100%;
-  	margin-right: -100%;
+    margin-left: auto;
+  	margin-right: auto;
+}
+/* ----------------------------------
+RESPONSIVE STYLES
+-------------------------------------*/
+@media only screen and (max-width: 600px) {
+  nav {
+    height: 50px;
+    transition: .25s;
+  }
+  nav a {
+    display: block;
+    text-align: center;
+    font-size:10px;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+  }
+
+  .hamburger {
+    display: block;
+    text-align: center;
+    margin-top: 0;
+}
+
+  /* Styles to apply with JS to slide the menu out or down */
+  .menu-open {
+    transform: translateX(0);
+    height: 300px;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .grid {
     grid-template-columns: 1fr;
   }
+}
 
 @media screen and (max-width: 600px) {
-      nav {
-        width: 600px;
-        }
+  .grid {
+    padding-bottom: 5px;
+    }
+  }

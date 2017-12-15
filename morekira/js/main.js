@@ -1,3 +1,18 @@
+// KONAMI!
+
+var kkeys = [];
+var konami = "38,38,40,40,37,39,37,39,66,65";
+
+$(document).keydown(function(e) {
+  kkeys.push( e.keyCode );
+  if ( kkeys.toString().indexOf( konami ) >= 0 ){
+    $(document).unbind('keydown',arguments.callee);
+
+    $('body').css('background-color', '#db3f29');
+
+
+  }
+});
 
 
   $('.clickme').click(function(e) {
@@ -15,40 +30,17 @@
   });
 
 
-  var offset = 250;
+  $('.autoplay').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
 
-  var duration = 300;
-
-  jQuery(window).scroll(function() {
-
-  if (jQuery(this).scrollTop() > offset) {
-
-  jQuery(‘.back-to-top’).fadeIn(duration);
-
-  } else {
-
-  jQuery(‘.back-to-top’).fadeOut(duration);
-
-  }
-
-  });
+});
 
 
 
-  jQuery(‘.back-to-top’).click(function(e) {
-
-  jQuery(‘html, body’).animate({scrollTop: 0}, duration);
-
-  return false;
-
-  }
-
-  });
-
-  $('.one-time').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    adaptiveHeight: true
+  $('.hamburger').on('click',function() {
+    console.log('hello');
+    $('nav').toggleClass('menu-open');
   });
