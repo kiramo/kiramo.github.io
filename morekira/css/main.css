@@ -348,7 +348,7 @@ hr {
 RESPONSIVE STYLES
 -------------------------------------*/
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   nav {
     height: 50px;
     transition: .25s;
