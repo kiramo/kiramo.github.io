@@ -13,7 +13,7 @@ Base styles:
 }
 
 img {
-	max-width: 100%;
+  max-width: 100%;
   max-resolution: 100%;
 }
 
@@ -21,27 +21,27 @@ p img {
   max-width: 400px;
   max-height: 400px
   overflow:hidden;
-  }
+}
 
 /* ----------------------------------------
 Typography
 ------------------------------------------- */
 p {
-	font-family: "PT+Sans", sans-serif;
-	font-weight: 400;
-	line-height: 130%;
-	text-align: left;
-	margin-bottom:20px;
-	color: #102127
+  font-family: "PT+Sans", sans-serif;
+  font-weight: 400;
+  line-height: 130%;
+  text-align: left;
+  margin-bottom:20px;
+  color: #102127
 }
 
 a {
   font-family: "PT+Sans", sans-serif;
-	font-weight: 600;
-	font-size: 13px;
-	text-decoration: none;
-	text-transform: uppercase;
-	color: #102127;
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #102127;
 }
 
 /* ----------------------------------------
@@ -51,9 +51,9 @@ nav {
   border-bottom: 3px solid #7E667F;
   width: 100%;
   overflow: hidden;
-	background-color: #fcc931;
-	position: fixed;
-	top: 0;
+  background-color: #fcc931;
+  position: fixed;
+  top: 0;
   left: 0;
   z-index:1;
 }
@@ -66,126 +66,126 @@ nav header {
   background-color: #FBBE09;
   color: #102127;
   text-align: center;
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 /* ----------------------------------------
 Layout
 ------------------------------------------- */
 .grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-column-gap: 15px;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 15px;
+}
 
 #about {
-	background-color: #fcc931;
+  background-color: #fcc931;
   background width: 100%;
-	padding-top: 50px;
-	padding-bottom: 60px;
-	}
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
 
 section {
-	padding-top: -20px;
-	padding-bottom: 40px;
+  padding-top: -20px;
+  padding-bottom: 40px;
   padding-right: 100px;
-	padding-left: 100px;
-  }
+  padding-left: 100px;
+}
 /* ----------------------------------------
 Header
 ------------------------------------------- */
 
 nav a {
-	font-family: 'PT+Sans', sans-serif;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	font-size: 16px;
-	color: #102127;
-	text-transform: uppercase;
-	text-decoration: none;
-	font-weight: 600;
-	display: inline-block;
-	letter-spacing: 1px;
-	-webkit-transition: color .5s;
-	transition: color .5s;
+  font-family: 'PT+Sans', sans-serif;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 16px;
+  color: #102127;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  letter-spacing: 1px;
+  -webkit-transition: color .5s;
+  transition: color .5s;
 }
 
 body {
-	color: #102127;
-	font-family: 'PT+Sans', sans-serif;
-	margin: 0 auto;
-	text-align: center;
-	line-height: 21px;
+  color: #102127;
+  font-family: 'PT+Sans', sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 21px;
   font-weight: 600;
 }
 
 header {
-	font-weight: 600;
+  font-weight: 600;
   background-image: url('../img/Sunflower.jpg');
-	img max-width: 100%;
+  img max-width: 100%;
   img max-height: 100%;
-	background-size: cover;
-	text-align: center;
-	background-position: center;
-	margin-left: auto;
-	margin-right: auto;
+  background-size: cover;
+  text-align: center;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
-	margin-bottom: 40px;
-	letter-spacing: 15px;
-	text-transform: uppercase;
-	}
+  margin-bottom: 40px;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+}
 
 h1 {
   font-size: 37px;
-	text-align:center;
+  text-align:center;
   margin-left: auto;
   margin-right: auto;
   padding-top: 3px;
-	padding-bottom: 3px;
+  padding-bottom: 3px;
   text-decoration: none;
   color: white;
-	text-transform: uppercase;
+  text-transform: uppercase;
   line-height: 1em
 }
 
 header h2 {
   font-size: 23px;
-	font-weight: lighter;
-	text-align:center;
+  font-weight: lighter;
+  text-align:center;
   margin-left: auto;
   margin-right: auto;
-	letter-spacing: 1px;
-	text-decoration: none;
+  letter-spacing: 1px;
+  text-decoration: none;
   color: white;
-	text-transform: uppercase;
-	padding-top: 0px;
-	}
+  text-transform: uppercase;
+  padding-top: 0px;
+}
 
 h2 {
-	font-family: "PT+Sans", sans-serif;
-	font-weight: 600;
-	font-size: 23px;
-	text-transform: uppercase;
-	padding-top: 30px;
-	padding-bottom: 5px;
+  font-family: "PT+Sans", sans-serif;
+  font-weight: 600;
+  font-size: 23px;
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-bottom: 5px;
   line-height: 1em
 }
 
 h3 {
-	font-family: "PT+Sans", sans-serif;
-	font-weight: 600;
-	font-size: 18px;
+  font-family: "PT+Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
   color: #102127
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .KirawithSunflowers {
-max-width: 500px;
-border: double #102127;
-padding-top: 5px;
-padding-bottom: 1px;
-padding-left: 6px;
-padding-right: 6px;
-margin: 0 auto;
+  max-width: 500px;
+  border: double #102127;
+  padding-top: 5px;
+  padding-bottom: 1px;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin: 0 auto;
 }
 
 
@@ -204,7 +204,7 @@ Buttons
 .hamburger {
   transform: translateX(0);
   display:none;
-max-height: 200px;
+  max-height: 200px;
 }
 
 /* ----------------------------------
@@ -216,9 +216,7 @@ RESPONSIVE STYLES
   }
 
   .hamburger {
-
-Display: None;
-
+    Display: None;
   }
 
   /* Styles to apply with JS to slide the menu out or down */
@@ -227,20 +225,19 @@ Display: None;
   }
 
 }
-
 .readmore {
   border: 3px solid #102127;
-	padding-right: 20px;
-	padding-left: 20px;
-	padding-top: 2.5px;
-	padding-bottom: 2.5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
   background: #FBBE09;
   color: #102127;
   transition: all .2s ease-in-out;
 }
 
 .readmore:hover { transform: scale(1.5);
-display:inline-block;
+  display:inline-block;
 }
 
 a:hover {
@@ -248,8 +245,8 @@ a:hover {
 }
 
 nav a:hover {
-    color: #7E667F;
-    background: #fcc931;
+  color: #7E667F;
+  background: #fcc931;
 }
 
 .readmore a:hover {
@@ -258,15 +255,15 @@ nav a:hover {
 }
 
 .readmore:hover{
-	background: #7E667F;
+  background: #7E667F;
 }
 input{
-	width:300px;
-	border:none;
-	background-color:#7E667F;
-	padding: 10px;
-	text-transform: uppercase;
-	text-align:center;
+  width:300px;
+  border:none;
+  background-color:#7E667F;
+  padding: 10px;
+  text-transform: uppercase;
+  text-align:center;
 }
 
 #popup {
@@ -279,82 +276,79 @@ input{
   border: 3px solid #102127;
   display: none;
   background: #7E667F;
-  }
+}
 
 
 .back-to-top {
 
-margin: 0;
+  margin: 0;
 
-position: fixed;
+  position: fixed;
 
-bottom: 0;
+  bottom: 0;
 
-right: 0;
+  right: 0;
 
-width: 70px;
+  width: 70px;
 
-height: 70px;
+  height: 70px;
 
-z-index: 100;
+  z-index: 100;
 
-display: none;
+  display: none;
 }
-
-
-
-
 
 
 /* ----------------------------------------
 Footer
 ------------------------------------------- */
 footer {
-    text-align: center;
-    background: #FBBE09;
-    padding-top: 0px;
-    padding-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
+  text-align: center;
+  background: #FBBE09;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .fa {
-padding: 20px;
-padding-bottom: -40px;
-color: #102127
+  padding: 20px;
+  padding-bottom: -40px;
+  color: #102127
 }
 
 .fa:hover {
-	color: #7E667F;
+  color: #7E667F;
 }
 
 
 .email {
-	margin-right: 30px;
-	font-size: 12px;
-  	color: #102127;
-	font-weight: 700;
-	border-color: #102127;
-  	border: 3px solid #102127;
-	text-align: center;
-	font-family: "PT+Sans", sans-serif;
-	font-weight: 400;
-	text-transform: uppercase;
-	padding-top: 5px;
-	padding-bottom: 5px;
+  margin-right: 30px;
+  font-size: 12px;
+  color: #102127;
+  font-weight: 700;
+  border-color: #102127;
+  border: 3px solid #102127;
+  text-align: center;
+  font-family: "PT+Sans", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-top: 5px;
+  padding-bottom: 5px;
 
 }
 
 hr {
-    color: #7E667F;
-		border-style: solid;
-    margin-left: auto;
-  	margin-right: auto;
+  color: #7E667F;
+  border-style: solid;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* ----------------------------------
 RESPONSIVE STYLES
 -------------------------------------*/
-@media only screen and (max-width: 600px) {
+
+@media screen and (max-width: 600px) {
   nav {
     height: 50px;
     transition: .25s;
@@ -365,13 +359,15 @@ RESPONSIVE STYLES
     font-size:10px;
     overflow: hidden;
     transition: all .3s ease-in-out;
+    z-index: 0;
   }
 
   .hamburger {
     display: block;
     text-align: center;
     margin-top: 0;
-}
+    z-index: 0;
+  }
 
   /* Styles to apply with JS to slide the menu out or down */
   .menu-open {
@@ -379,15 +375,19 @@ RESPONSIVE STYLES
     height: 300px;
   }
 }
-
-@media screen and (max-width: 600px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
+.grid {
+  padding-bottom: 5px;
 }
-
-@media screen and (max-width: 600px) {
-  .grid {
-    padding-bottom: 5px;
-    }
-  }
+section {
+  padding-top: 30px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+.slick-list img {
+  height: 100px;
+  width: 122.5px;
+}
+.grid {
+  grid-template-columns: 1fr;
+}
+}
