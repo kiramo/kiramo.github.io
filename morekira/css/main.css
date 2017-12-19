@@ -348,7 +348,7 @@ hr {
 RESPONSIVE STYLES
 -------------------------------------*/
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   nav {
     height: 50px;
     transition: .25s;
@@ -391,4 +391,3 @@ section {
   grid-template-columns: 1fr;
 }
 }
-
